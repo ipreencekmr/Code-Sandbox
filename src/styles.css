@@ -2,3 +2,56 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.theme_input {
+  border: 1px solid lightgray;
+}
+
+.theme_btn {
+  background-color: purple;
+  border: 1px solid lightgray;
+  color: white;
+  transition: all;
+  transition-duration: 0.3;
+  transition-timing-function: ease-in-out;
+}
+
+.theme_btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.img_btn img {
+  max-height: 12px;
+  width: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.btn_link {
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration: underline;
+  font-size: 12px;
+  color: rgb(138, 57, 11);
+}
+
+.left_block {
+  color: darkgray;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.right_block {
+  text-align: right;
+  align-items: right;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}

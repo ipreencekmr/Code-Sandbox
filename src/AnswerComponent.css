@@ -1,0 +1,17 @@
+.AnswerComponent {
+  margin: 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.answer_box {
+  border-right: 2px solid gray;
+}
+
+.answer_desc {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  word-wrap: break-word;
+}

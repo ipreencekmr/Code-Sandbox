@@ -1,17 +1,35 @@
 import "./AnswerComponent.css";
 
 export default function AnswerComponent({ aId, aDate, aTime, aDesc }) {
-  const clickListener = () => {
-    console.log("Report me spam");
+  const clickListener = (event) => {
+    switch (event.target.name) {
+      case "reportSpam":
+        console.log("Report me spam");
+        break;
+      case "":
+        break;
+      default:
+    }
   };
 
   return (
     <div className="AnswerComponent">
-      <div>{aId}</div>
-      <div>{aDate}</div>
-      <div>{aTime}</div>
-      <div>{aDesc}</div>
-      <button onClick={clickListener}>Report spam</button>
+      <div className="left_block">
+        <span>ID: {aId} | </span>
+        <span>
+          {aDate} {aTime}
+        </span>
+      </div>
+
+      <div className="align-right">
+        <button className="btn_link" name="reportSpam" onClick={clickListener}>
+          Report spam
+        </button>
+      </div>
+
+      <div className="align-left answer_box">
+        <div className="answer_desc">{aDesc}</div>
+      </div>
     </div>
   );
 }

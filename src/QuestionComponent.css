@@ -1,0 +1,20 @@
+.QuestionComponent section {
+}
+
+.question_box {
+  border-left: 4px solid gray;
+}
+
+.topic {
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.question_desc {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
