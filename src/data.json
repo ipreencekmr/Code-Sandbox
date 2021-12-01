@@ -1,0 +1,92 @@
+[
+  {
+    "question_id": 1,
+    "topic_id": 1,
+    "topic_desc": "Topic 1",
+    "question_desc": "question description 1",
+    "date": "2021-11-29",
+    "time": "3:00 PM",
+    "noOfReplies": 2,
+    "replies": [
+      {
+        "reply_id": 1,
+        "reply_desc": "reply description",
+        "date": "2021-11-29",
+        "time": "3:00 PM",
+        "reactions": [
+          {
+            "reaction_id": 1,
+            "reaction": "I went thru",
+            "count": 24
+          }
+        ]
+      },
+      {
+        "reply_id": 2,
+        "reply_desc": "reply description 2",
+        "date": "2021-11-29",
+        "time": "3:00 PM",
+        "reactions": [
+          {
+            "reaction_id": 2,
+            "reaction": "I had same problem",
+            "count": 10
+          }
+        ]
+      }
+    ],
+    "reactions": [
+      {
+        "reaction_id": 1,
+        "reaction": "I went thru",
+        "count": 24
+      },
+      {
+        "reaction_id": 2,
+        "reaction": "I had same problem",
+        "count": 10
+      }
+    ]
+  },
+  {
+    "question_id": 2,
+    "topic_id": 1,
+    "topic_desc": "Topic 1",
+    "question_desc": "question description 2",
+    "date": "2021-11-29",
+    "time": "3:00 PM",
+    "noOfReplies": 1,
+    "replies": [
+      {
+        "reply_id": 3,
+        "reply_desc": "reply description 3",
+        "date": "2021-11-29",
+        "time": "3:00 PM",
+        "reactions": [
+          {
+            "reaction_id": 1,
+            "reaction": "I went thru",
+            "count": 24
+          },
+          {
+            "reaction_id": 2,
+            "reaction": "I had same problem",
+            "count": 10
+          }
+        ]
+      }
+    ],
+    "reactions": [
+      {
+        "reaction_id": 1,
+        "reaction": "I went thru",
+        "count": 24
+      },
+      {
+        "reaction_id": 2,
+        "reaction": "I had same problem",
+        "count": 10
+      }
+    ]
+  }
+]
