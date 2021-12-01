@@ -77,30 +77,34 @@ export default function QuestionComponent({
             name="expandCollapse"
             onClick={clickListener}
           >
-            {qExpanded ? "Collapse" : "Expand"}
+            {qExpanded ? "Read less..." : "Read more..."}
           </button>
         </div>
 
         {qExpanded ? <AnswerListComponent answers={qAnswers} /> : null}
       </section>
       <DialogueComponent open={open}>
-        <div>Post an answer</div>
-        <div>{qDesc}</div>
-        <textarea className="theme_input"></textarea>
-        <button
-          className="theme_btn"
-          name="postAnAnswer"
-          onClick={clickListener}
-        >
-          Post
-        </button>
-        <button
-          className="theme_btn"
-          name="closeDialogue"
-          onClick={clickListener}
-        >
-          Close
-        </button>
+        <div className="header">Reply an answer</div>
+        <div className="body">
+          <div>{qDesc}</div>
+          <textarea className="theme_input"></textarea>
+        </div>
+        <div className="footer">
+          <button
+            className="theme_btn"
+            name="closeDialogue"
+            onClick={clickListener}
+          >
+            Close
+          </button>
+          <button
+            className="theme_btn"
+            name="postAnAnswer"
+            onClick={clickListener}
+          >
+            Post
+          </button>
+        </div>
       </DialogueComponent>
     </div>
   );

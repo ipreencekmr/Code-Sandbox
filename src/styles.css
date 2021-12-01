@@ -5,15 +5,16 @@
 
 .theme_input {
   border: 1px solid lightgray;
+  width: 100%;
+  padding: 5px;
 }
 
 .theme_btn {
   background-color: purple;
-  border: 1px solid lightgray;
   color: white;
-  transition: all;
-  transition-duration: 0.3;
-  transition-timing-function: ease-in-out;
+  transition: 0.3s;
+  border: 0px;
+  padding: 5px 10px;
 }
 
 .theme_btn:hover {
@@ -37,7 +38,7 @@
 }
 
 .left_block {
-  color: darkgray;
+  color: rgb(40, 40, 40);
   font-size: 12px;
   font-weight: bold;
   text-align: left;

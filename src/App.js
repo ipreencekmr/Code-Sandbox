@@ -30,7 +30,7 @@ export default function App() {
         <div className="row">
           <div className="col-12 align-right">
             <button
-              className="theme_btn "
+              className="theme_btn mb-2"
               name="openDialogue"
               onClick={clickListener}
             >
@@ -42,22 +42,27 @@ export default function App() {
         <QuestionListComponent questions={questions} />
       </div>
       <DialogueComponent open={open}>
-        <input className="theme_input" type="text" placeholder="Subject" />
-        <textarea className="theme_input"></textarea>
-        <button
-          className="theme_btn"
-          name="postQuestion"
-          onClick={clickListener}
-        >
-          Post
-        </button>
-        <button
-          className="theme_btn"
-          name="closeDialogue"
-          onClick={clickListener}
-        >
-          Close
-        </button>
+        <div className="header">Ask a question</div>
+        <div className="body">
+          <input className="theme_input" type="text" placeholder="Subject" />
+          <textarea className="theme_input"></textarea>
+        </div>
+        <div className="footer">
+          <button
+            className="theme_btn"
+            name="closeDialogue"
+            onClick={clickListener}
+          >
+            Close
+          </button>
+          <button
+            className="theme_btn"
+            name="postQuestion"
+            onClick={clickListener}
+          >
+            Post
+          </button>
+        </div>
       </DialogueComponent>
     </>
   );

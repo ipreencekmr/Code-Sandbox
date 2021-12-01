@@ -14,17 +14,22 @@ export default function AnswerComponent({ aId, aDate, aTime, aDesc }) {
 
   return (
     <div className="AnswerComponent">
-      <div className="left_block">
-        <span>ID: {aId} | </span>
-        <span>
-          {aDate} {aTime}
-        </span>
-      </div>
-
-      <div className="align-right">
-        <button className="btn_link" name="reportSpam" onClick={clickListener}>
-          Report spam
-        </button>
+      <div className="row">
+        <div className="col-6 left_block">
+          <span>ID: {aId} | </span>
+          <span>
+            {aDate} {aTime}
+          </span>
+        </div>
+        <div className="col-6 align-right">
+          <button
+            className="btn_link"
+            name="reportSpam"
+            onClick={clickListener}
+          >
+            Report spam
+          </button>
+        </div>
       </div>
 
       <div className="align-left answer_box">
